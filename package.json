@@ -1,5 +1,5 @@
 {
-  "name": "javascript-phone-validation",
+  "name": "@abstractapi/javascript-phone-validation",
   "version": "0.1.0",
   "description": "AbstractAPI Javascript Phone Validation Library - Wrapper to quickly start using the powerful AbstractAPI's Phone Validation service in your projects.",
   "main": "index.js",
@@ -10,14 +10,30 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/abstractapi/javascript-phone-validation.git"
+    "url": "git+https://github.com/abstractapi/javascript-phone-validation.git"
   },
-  "keywords": ["API", "Abstract", "Library", "PhoneValidation", "Wrapper", "abstract", "abstractapi", "api", "geolocation", "ip", "ip geolocation", "library", "phone-api", "phone-authentication", "phone-validation", "phone-verification", "javascript-library", "verify-phone-numbers", "wrapper"],
-  "author": {
-    "name" : "Benjamin Bouchet",
-    "email" : "libraries@abstractapi.com",
-    "url" : "https://abstractapi.com/"
-  },
+  "keywords": [
+    "API",
+    "Abstract",
+    "Library",
+    "PhoneValidation",
+    "Wrapper",
+    "abstract",
+    "abstractapi",
+    "api",
+    "geolocation",
+    "ip",
+    "ip geolocation",
+    "library",
+    "phone-api",
+    "phone-authentication",
+    "phone-validation",
+    "phone-verification",
+    "javascript-library",
+    "verify-phone-numbers",
+    "wrapper"
+  ],
+  "author": "Benjamin Bouchet <libraries@abstractapi.com> (https://abstractapi.com/)",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/abstractapi/javascript-phone-validation/issues"
@@ -37,6 +53,10 @@
     "webpack-cli": "^4.5.0"
   },
   "dependencies": {
-    "javascript-core": "https://github.com/abstractapi/javascript-core.git"
+    "@abstractapi/javascript-core": "0.x"
+  },
+  "directories": {
+    "lib": "lib",
+    "test": "test"
   }
 }

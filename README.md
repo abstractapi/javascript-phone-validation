@@ -19,7 +19,7 @@ You can install **javascript-phone-validation** via npm, from our CDN, or downlo
 Download and install the library from npm:
 
 ```
-npm install javascript-phone-validation --save
+npm install @abstractapi/javascript-phone-validation --save
 ```
 
 In your project, import it and configure your `API_KEY`:
