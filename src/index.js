@@ -1,4 +1,4 @@
-import * as core from 'javascript-core';
+import * as core from '@abstractapi/javascript-core';
 
 export class AbstractPhoneValidation {
     static apiKey;
