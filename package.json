@@ -1,6 +1,6 @@
 {
   "name": "@abstractapi/javascript-phone-validation",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "AbstractAPI Javascript Phone Validation Library - Wrapper to quickly start using the powerful AbstractAPI's Phone Validation service in your projects.",
   "main": "index.js",
   "scripts": {
