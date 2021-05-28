@@ -38,7 +38,7 @@ You can have the browser download the library from its closest location through 
 <script src="https://cdn.jsdelivr.net/npm/@abstractapi/javascript-core@latest/dist/javascript-core.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@abstractapi/javascript-phone-validation@latest/dist/javascript-phone-validation.js"></script>
 <script>
-    AbstractEmailValidation.configure('API_KEY');
+    AbstractPhoneValidation.configure('API_KEY');
 
     // use the library
 </script>
@@ -87,7 +87,7 @@ function validatePhone(number) {
 
 ## API response
 
-The API response is returned in a `IpGeolocationData` object.
+The API response contains the following fields:
 
 | PARAMETER | TYPE | DETAILS |
 | - | - | - |
