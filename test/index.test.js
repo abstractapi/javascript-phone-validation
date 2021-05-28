@@ -1,28 +1,7 @@
 import 'regenerator-runtime/runtime';
 import {AbstractPhoneValidation} from '../src'
-const mocks = require('./mocks')
 
-const API_KEY = 'ENTER YOUR KEY';
-
-function mockFetch(status, data) {
-    const xhrMockObj = {
-        open: jest.fn(),
-        send: jest.fn(),
-        setRequestHeader: jest.fn(),
-        onreadystatechange: jest.fn(),
-        readyState: 4,
-        status,
-        responseText: JSON.stringify(data),
-    };
-
-    const xhrMockClass = () => xhrMockObj;
-
-    global.XMLHttpRequest = jest.fn().mockImplementation(xhrMockClass);
-
-    setTimeout(() => {
-        xhrMockObj.onreadystatechange();
-    }, 0);
-}
+const API_KEY = process.env.PHONE_VALIDATION_API_KEY;
 
 test('Should throw error when no key is configured', () => {
     let thrownError;
@@ -54,8 +33,6 @@ test('Should throw error when phone is empty', () => {
 });
 
 test('Request OK when everything is set up correctly', async () => {
-    mockFetch(200, mocks)
-
     AbstractPhoneValidation.configure(API_KEY);
     let response = await AbstractPhoneValidation.verify('14154582468')
     expect(response.phone).toBe('14154582468')

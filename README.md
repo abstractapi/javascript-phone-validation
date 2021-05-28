@@ -132,4 +132,7 @@ To build the lib, you need to run `npm run build:lib`.
 
 ### Test
 
-To run the test suite, you need to run: `npm run test`.
+To run the test suite, you need the API key from the abstract website and you can run:
+
+    PHONE_VALIDATION_API_KEY=(your key here) npm run test
+
